@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Recetas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Recetas</h1>
+        <div class="search-container">
+            <input type="text" id="ingredient-input" placeholder="Ingrese ingredientes...">
+            <button onclick="buscarRecetas()">Buscar</button>
+        </div>
+        <div id="filters">
+            <label for="cuisine-select">Tipo de Cocina:</label>
+            <select id="cuisine-select">
+                <option value="">Todos</option>
+                <option value="chinese">China</option>
+                <option value="italian">Italiana</option>
+                <option value="mexican">Mexicana</option>
+                <option value="indian">India</option>
+            </select>
+        </div>
+        <div id="recipes-container"></div>
+        <div id="recipe-details"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
